@@ -4,9 +4,9 @@
 
 Welcome to **Vibe Crap**, the worst HTML + CSS + JavaScript experiment on the web, brought to you by generative AI prompts. Hosted at [VibeCrap.com](https://vibecrap.com), this is an example of the worst crap that ChatGPT will spit out. It might be a learning exercise. It might be a warning. It might inspire you to smear vibe crap all over the web. 
 
-This is a parody project by [Ivy Cyber](https://ivycyber.com) showing just how fast generative AI can churn out terrible, anti-pattern–filled code.
+This is a parody project by [Ivy Cyber](https://ivycyber.com) showing just how fast generative AI can churn out terrible, anti-pattern-filled code.
 
-**⚠️ WARNING:** Vibe Crap can eat up your memory and freeze your browser even though there are guard rails added to mitigate it.
+**⚠️ WARNING:** Vibe Crap can eat up your memory and freeze your browser even though there are guard rails added to mitigate against it.
 
 ![screenshot](screenshot.png)
 
@@ -126,7 +126,7 @@ Community-contributed awful features? Maybe you could be the "vibe coder" to add
 
 ## ⚠️ Disclaimer
 
-Vibe Crap is for educational and entertainment purposes only. Do not deploy it in production, do not embed it on client projects, and do not take it seriously. Unless you want to learn what pain feels like in HTML, CSS, and JS. Vibe Crap can eat up your memory and freeze your browser even though there are purposeful guard rails added to mitigate that behavior.
+Vibe Crap is for educational and entertainment purposes only. Do not deploy it in production, do not embed it on client projects, and do not take it seriously. Unless you want to learn what pain feels like in HTML, CSS, and JS. Vibe Crap can eat up your memory and freeze your browser even though there are purposeful guard rails added to mitigate against that behavior.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
