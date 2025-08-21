@@ -1,0 +1,76 @@
+##
+# example.com nginx config that allows Vibe Crap demos to happen as securely as possible
+##
+
+# Redirect all HTTP to HTTPS
+server {
+  listen 80;
+  listen [::]:80;
+  server_name example.com www.example.com;
+  return 301 https://$host$request_uri;
+}
+
+# HTTPS site
+server {
+  listen 443 ssl;
+  listen [::]:443 ssl;
+  server_name example.com www.example.com;
+
+  root /var/www/html;
+  index index.html index.htm;
+
+  # --- TLS (Certbot) ---
+  ssl_certificate /etc/letsencrypt/live/example.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+  include /etc/letsencrypt/options-ssl-nginx.conf;
+  ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+
+  # --- Security headers (apply on all statuses, incl. 204) ---
+  add_header X-Frame-Options "SAMEORIGIN" always;
+  add_header Referrer-Policy "strict-origin" always;
+  add_header X-XSS-Protection "1; mode=block" always;
+  add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
+  add_header X-Content-Type-Options "nosniff" always;
+
+  # CSP for the demo: same-origin, allow inline script/style, data/blob for assets, restrict forms to self
+  add_header Content-Security-Policy
+    "default-src 'self' data: blob:;
+     script-src 'self' 'unsafe-inline';
+     style-src 'self' 'unsafe-inline';
+     img-src 'self' data:;
+     frame-src 'self';
+     form-action 'self';
+     base-uri 'none'" always;
+
+  add_header Permissions-Policy "interest-cohort=(),geolocation=(),midi=(),sync-xhr=(),microphone=(),camera=(),magnetometer=(),gyroscope=(),fullscreen=(self),payment=()" always;
+
+  # --- CSRF demo support ---
+  # If a static path receives POST, return 204 instead of 405
+  error_page 405 = @post_ok;
+  location @post_ok { return 204; }
+
+  location / {
+    # Short-circuit POSTs anywhere with 204 so the demo "succeeds"
+    if ($request_method = POST) { return 204; }
+
+    # Normal static handling
+    try_files $uri $uri/ =404;
+  }
+
+  # Optional explicit endpoint if your form uses action="/csrf"
+  location = /csrf {
+    limit_except GET POST { deny all; }
+    if ($request_method = POST) { return 204; }
+    return 200;
+  }
+
+  # Safety: keep request bodies tiny
+  client_max_body_size 32k;
+
+  # Optional: allow ACME HTTP-01 challenge if you ever renew via this server block
+  location ^~ /.well-known/acme-challenge/ {
+    default_type "text/plain";
+    root /var/www/html;
+    allow all;
+  }
+}
