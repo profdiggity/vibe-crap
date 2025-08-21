@@ -12,7 +12,7 @@ This is a parody project by [Ivy Cyber](https://ivycyber.com) showing just how f
 
 **ℹ️ NOTE:** All of this is considered safer by ChatGPT than [typing "Ted Rall" into the prompt](https://rall.com/2025/04/18/ted-rall-chatgpt-unpersoning-ai-censorship-orwellian-dystopia).
 
-In some ways this is a parody of web standard tests like the Acid series... but instead of compliance, it demonstrates the crap that can go wrong in web development when you're vibe coding. It’s intentionally ugly, intentionally broken, and intentionally funny... but it also should make you think critically about "vibe coding" with generative AI prompt systems. Make of it what you wish — you're gonna do what you want anyway, and we're not your parents.
+In some ways this is a parody of web standard tests like the [Acid series](https://en.wikipedia.org/wiki/Acid3), but instead of compliance, it demonstrates the crap that can go wrong in web development when you're relying upon generative AI to code for you. It’s intentionally ugly, intentionally broken, and intentionally funny... but it also should make you think critically about "vibe coding" with generative AI prompt systems. Make of it what you wish — you're gonna do what you want anyway, and we're not your parents.
 
 ---
 
@@ -60,7 +60,7 @@ All demos are sandboxed and capped, they do not exfiltrate data.
 
 The real purpose of Vibe Crap is to learn why bad practices feel awful.
 
-### Chrome / Edge
+### Chrome / Chromium / Edge
 
 * DevTools → Performance → Record for 10–20 seconds.
 * Look for huge Layout and Style blocks.
@@ -99,6 +99,19 @@ Vibe Crap demonstrates things that should never be done on the web, that are eas
 * It runs poorly.
 * It teaches anti-patterns.
 * It helps coders think critically.
+
+---
+
+## 🌐 Example Nginx Config for Vibe Crap
+
+An `nginx-conf-example.txt` is included that makes the Vibe Crap demos possible while keeping things as secure as practical:
+
+* Redirects all HTTP traffic to HTTPS with Let’s Encrypt TLS.
+* Adds modern security headers (`X-Frame-Options`, `Referrer-Policy`, `X-XSS-Protection`, `Strict-Transport-Security`, `X-Content-Type-Options`, `Content-Security-Policy`, and `Permissions-Policy`) with the `always` flag so they apply to 204/405/etc.
+* Provides a POST “sink” that safely returns `204` for the CSRF demo instead of throwing `405 Method Not Allowed`.
+* Tightens CSP so forms and frames only work against `self` while still allowing inline scripts/styles for the chaos lab.
+
+This setup lets the Vibe Crap CSRF demo work without modifying the HTML, and still scores an “A” rating at [securityheaders.com](https://securityheaders.com/).
 
 ---
 
