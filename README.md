@@ -1,8 +1,8 @@
 # 🎨 Vibe Crap 💩
 
-![crash-prone](assets/status-crash--prone-red)  
-![uses-blink-tag](assets/html-uses--blink--tag-blue)  
-![web-pain-100%](assets/web--pain-100%25-yellow)
+![crash-prone](status_crash-prone.svg)  
+![uses-blink-tag](html_uses-blink-tag.svg)  
+![web-pain-100%](web-pain_100.svg)
 
 Welcome to **Vibe Crap**, the worst HTML + CSS + JavaScript experiment on the web, brought to you by generative AI prompts. Hosted at [VibeCrap.com](https://vibecrap.com), this is an example of the worst crap that ChatGPT will spit out. It might be a learning exercise. It might be a warning. It might inspire you to smear vibe crap all over the web. In some ways this is a parody of web standard tests like the Acid series... but instead of compliance, it demonstrates the crap that can go wrong in web development when you're vibe coding.
 
