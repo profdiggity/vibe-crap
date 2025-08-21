@@ -31,7 +31,7 @@ In some ways this is a parody of web standard tests like the [Acid series](https
 
 ---
 
-## 🛡️ Insecurity Demos
+## 👾 Insecurity Demos
 
 The Insecurity Demo Panel shows common vulnerabilities in a safe, sandboxed way:
 
@@ -56,7 +56,7 @@ All demos are sandboxed and capped, they do not exfiltrate data.
 
 ---
 
-## 🔍 Profiling the Pain
+## 🧐 Profiling the Pain
 
 The real purpose of Vibe Crap is to learn why bad practices feel awful.
 
@@ -102,9 +102,9 @@ Vibe Crap demonstrates things that should never be done on the web, that are eas
 
 ---
 
-## 🌐 Example Nginx Config
+## 🌐 Example Server Config
 
-A `nginx-conf-example.txt` is included that makes the Vibe Crap demos possible while keeping things as secure as practical:
+A `nginx-conf-example.txt` is included that makes hosting the Vibe Crap demos on a server possible while keeping things as secure as practical:
 
 * Redirects all HTTP traffic to HTTPS with Let’s Encrypt TLS.
 * Adds modern security headers (`X-Frame-Options`, `Referrer-Policy`, `X-XSS-Protection`, `Strict-Transport-Security`, `X-Content-Type-Options`, `Content-Security-Policy`, and `Permissions-Policy`) with the `always` flag so they apply to 204/405/etc.
@@ -112,6 +112,8 @@ A `nginx-conf-example.txt` is included that makes the Vibe Crap demos possible w
 * Tightens CSP so forms and frames only work against `self` while still allowing inline scripts/styles for the chaos lab.
 
 This setup lets the Vibe Crap CSRF demo work without modifying the HTML, and still scores an “A” rating at [securityheaders.com](https://securityheaders.com/).
+
+Otherwise, just download the `index.html` and open it on your machine in your preferred web browser.
 
 ---
 
