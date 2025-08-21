@@ -4,11 +4,11 @@
 
 Welcome to **Vibe Crap**, the worst HTML + CSS + JavaScript experiment on the web, brought to you by generative AI prompts. Hosted at [VibeCrap.com](https://vibecrap.com), this is an example of the worst crap that ChatGPT will spit out. It might be a learning exercise. It might be a warning. It might inspire you to smear vibe crap all over the web. In some ways this is a parody of web standard tests like the Acid series... but instead of compliance, it demonstrates the crap that can go wrong in web development when you're vibe coding.
 
+This is a parody project by [Ivy Cyber](https://ivycyber.com) showing just how fast generative AI can churn out terrible, anti-pattern–filled code. It’s intentionally ugly, intentionally broken, and intentionally funny... but it also should make you think critically about "vibe coding" with generative AI prompt systems. Make of it what you wish — you're gonna do what you want anyway, and we're not your parents.
+
 **⚠️ WARNING: Vibe Crap can eat up your memory and freeze your browser even though there are guard rails added to mitigate it.**
 
 **ℹ️ NOTE: All of this is considered safer by ChatGPT than [typing "Ted Rall" into the prompt](https://rall.com/2025/04/18/ted-rall-chatgpt-unpersoning-ai-censorship-orwellian-dystopia).**
-
-This is a parody project by [Ivy Cyber](https://ivycyber.com) showing just how fast generative AI can churn out terrible, anti-pattern–filled code. It’s intentionally ugly, intentionally broken, and intentionally funny... but it also should make you think critically about "vibe coding" with generative AI prompt systems. Make of it what you wish — you're gonna do what you want anyway, and we're not your parents.
 
 ![screenshot](screenshot.png)  
 
