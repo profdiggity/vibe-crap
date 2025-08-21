@@ -6,6 +6,8 @@ Welcome to **Vibe Crap**, the worst HTML + CSS + JavaScript experiment on the we
 
 This is a parody project by [Ivy Cyber](https://ivycyber.com) showing just how fast generative AI can churn out terrible, anti-pattern-filled code.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R6R1194HN7) [![liberapay](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/PrivacySafe/donate)
+
 **⚠️ WARNING:** Vibe Crap can eat up your memory and freeze your browser even though there are guard rails added to mitigate against it.
 
 ![screenshot](screenshot.png)
