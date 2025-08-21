@@ -102,9 +102,9 @@ Vibe Crap demonstrates things that should never be done on the web, that are eas
 
 ---
 
-## 🌐 Example Nginx Config for Vibe Crap
+## 🌐 Example Nginx Config
 
-An `nginx-conf-example.txt` is included that makes the Vibe Crap demos possible while keeping things as secure as practical:
+A `nginx-conf-example.txt` is included that makes the Vibe Crap demos possible while keeping things as secure as practical:
 
 * Redirects all HTTP traffic to HTTPS with Let’s Encrypt TLS.
 * Adds modern security headers (`X-Frame-Options`, `Referrer-Policy`, `X-XSS-Protection`, `Strict-Transport-Security`, `X-Content-Type-Options`, `Content-Security-Policy`, and `Permissions-Policy`) with the `always` flag so they apply to 204/405/etc.
