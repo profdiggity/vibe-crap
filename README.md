@@ -29,9 +29,9 @@ This is a parody project by [Ivy Cyber](https://ivycyber.com) showing just how f
 
 ---
 
-## 🛡️ Security Demos
+## 🛡️ Insecurity Demos
 
-The Security Demo Panel shows common vulnerabilities in a safe, sandboxed way:
+The Insecurity Demo Panel shows common vulnerabilities in a safe, sandboxed way:
 
 * **Simulated XSS** — demonstrates why `innerHTML` is unsafe.
 * **Clickjacking Overlay** — invisible iframe tricking clicks.
@@ -40,7 +40,7 @@ The Security Demo Panel shows common vulnerabilities in a safe, sandboxed way:
 * **Open Redirect** — link rewired via unvalidated `next` parameter.
 * **Prototype Pollution** — naive parsing into object keys.
 
-All security demos are sandboxed and capped, they do not exfiltrate data.
+All demos are sandboxed and capped, they do not exfiltrate data.
 
 ---
 
