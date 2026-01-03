@@ -2,7 +2,7 @@
 
 ![crash-prone](crap-badges/status_crash-prone.svg) ![uses-blink-tag](crap-badges/html_uses-blink-tag.svg) ![web-pain-100%](crap-badges/web-pain_100.svg)
 
-Welcome to **Vibe Crap**, the worst HTML + CSS + JavaScript experiment on the web, brought to you by generative AI prompts. Hosted at [VibeCrap.com](https://vibecrap.com), this is an example of the worst crap that ChatGPT will spit out. It might be a learning exercise. It might be a warning. It might inspire you to smear vibe crap all over the web. 
+Welcome to **Vibe Crap**, the worst HTML + CSS + JavaScript experiment on the web, brought to you by generative AI prompts. This is an example of the worst crap that ChatGPT will spit out. It might be a learning exercise. It might be a warning. It might inspire you to smear vibe crap all over the web. 
 
 📽️ [Watch it in action HERE](https://youtu.be/zuvfhM-2qzE)
 
